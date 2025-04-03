@@ -11,6 +11,7 @@ resource "aws_db_instance" "RDS" {
   password = local.secret_string.password
   skip_final_snapshot = var.skip_final_snapshot
   final_snapshot_identifier = var.final_snapshot_identifier
+  snapshot_identifier = var.snapshot_identifier
   tags = var.tags
 }
 
