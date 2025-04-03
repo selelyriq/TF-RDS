@@ -27,5 +27,5 @@ variable "skip_final_snapshot" {
 }
 
 variable "final_snapshot_identifier" {
-    type = string
+    type = bool
 }
