@@ -1,35 +1,35 @@
 variable "tags" {
-    type = map
+  type = map(any)
 }
 
 variable "identifier" {
-    type = string
+  type = string
 }
 
 variable "engine" {
-    type = string
+  type = string
 }
 
 variable "instance_class" {
-    type = string
+  type = string
 }
 
 variable "allocated_storage" {
-    type = number
+  type = number
 }
 
 variable "username" {
-    type = string
+  type = string
 }
 
 variable "skip_final_snapshot" {
-    type = bool
+  type = bool
 }
 
 variable "final_snapshot_identifier" {
-    type = string
+  type = string
 }
 
 variable "snapshot_identifier" {
-    type = string
+  type = string
 }
