@@ -21,3 +21,7 @@ variable "allocated_storage" {
 variable "username" {
     type = string
 }
+
+variable "skip_final_snapshot" {
+    type = bool
+}

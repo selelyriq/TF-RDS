@@ -9,6 +9,7 @@ resource "aws_db_instance" "RDS" {
   allocated_storage = var.allocated_storage
   username = var.username
   password = local.secret_string.password
+  skip_final_snapshot = var.skip_final_snapshot
   tags = var.tags
 }
 
