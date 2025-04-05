@@ -19,6 +19,7 @@ resource "aws_db_instance" "RDS" {
   allocated_storage         = var.allocated_storage
   username                  = var.username
   password                  = local.secret_string.password
+  multi_az                  = var.multi_az
   skip_final_snapshot       = var.skip_final_snapshot
   final_snapshot_identifier = var.final_snapshot_identifier
   snapshot_identifier       = var.snapshot_identifier

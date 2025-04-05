@@ -33,3 +33,7 @@ variable "final_snapshot_identifier" {
 variable "snapshot_identifier" {
   type = string
 }
+
+variable "multi_az" {
+  type = bool
+}
