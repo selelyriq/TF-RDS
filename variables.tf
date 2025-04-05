@@ -38,6 +38,10 @@ variable "multi_az" {
   type = bool
 }
 
-variable "subnet_ids" {
+variable "db_subnet_group_name" {
+  type = string
+}
+
+variable "security_group_ids" {
   type = list(string)
 }
