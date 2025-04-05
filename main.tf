@@ -20,6 +20,7 @@ resource "aws_db_instance" "RDS" {
   username                  = var.username
   password                  = local.secret_string.password
   multi_az                  = var.multi_az
+  subnet_ids                = var.subnet_ids
   skip_final_snapshot       = var.skip_final_snapshot
   final_snapshot_identifier = var.final_snapshot_identifier
   snapshot_identifier       = var.snapshot_identifier

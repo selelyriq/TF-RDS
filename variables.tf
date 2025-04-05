@@ -37,3 +37,7 @@ variable "snapshot_identifier" {
 variable "multi_az" {
   type = bool
 }
+
+variable "subnet_ids" {
+  type = list(string)
+}
