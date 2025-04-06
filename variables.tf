@@ -45,3 +45,11 @@ variable "db_subnet_group_name" {
 variable "security_group_ids" {
   type = list(string)
 }
+
+variable "vpc_id" {
+  type = string
+}
+
+variable "subnet_ids" {
+  type = list(string)
+}
